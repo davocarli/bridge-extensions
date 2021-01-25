@@ -1,0 +1,12 @@
+{
+  "name": "my_first_extension",
+  "displayName": "My First Extension",
+  "description": "The First Extension I've Created",
+  "category": "",
+  "documentLink": "",
+  "needsOAuth": true,
+  "providerData": [],
+  "module": [],
+  "webhooks": [],
+  "hasOAuth": true
+}

@@ -1,0 +1,37 @@
+{
+  "name": "hello_world",
+  "displayName": "Hello World",
+  "description": "",
+  "category": "",
+  "documentLink": "",
+  "needsOAuth": false,
+  "providerData": [],
+  "module": [
+    {
+      "id": "print_hello_world",
+      "name": "Print Hello World",
+      "description": "This module will print \"Hello World\" to the conversation.",
+      "hasReturn": false,
+      "param": []
+    },
+    {
+      "id": "return_random_greeting",
+      "name": "Return Random Greeting",
+      "description": "This module will take up to 5 inputs as \"greetings\" and prefix one of them to \", World!\" before adding it to the conversation.",
+      "hasReturn": true,
+      "param": [
+        {
+          "param": "input_array",
+          "displayName": "Inputs",
+          "description": "The set of greetings to randomly choose from.",
+          "type": "STRING",
+          "maxItems": 5,
+          "allowArray": true,
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "webhooks": [],
+  "hasOAuth": false
+}

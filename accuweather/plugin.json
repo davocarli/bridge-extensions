@@ -1,0 +1,36 @@
+{
+  "name": "accuweather",
+  "displayName": "AccuWeather",
+  "description": "AccuWeather Plugin for Getting Forecast Data",
+  "category": "",
+  "documentLink": "",
+  "needsOAuth": false,
+  "providerData": [
+    {
+      "param": "api_key",
+      "displayName": "Api Key",
+      "description": "AccuWeather API Key. Can be obtained by registering at https://developer.accuweather.com/",
+      "type": "PASSWORD",
+      "optional": false
+    }
+  ],
+  "module": [
+    {
+      "id": "city_search",
+      "name": "Search for City",
+      "description": "Returns an array of all cities matching your search, and their basic information. Includes a \"Key\" for that city that can be used to get forecast data.",
+      "hasReturn": true,
+      "param": [
+        {
+          "param": "search_text",
+          "displayName": "City Name",
+          "description": "The name of the city to search for",
+          "type": "STRING",
+          "optional": false
+        }
+      ]
+    }
+  ],
+  "webhooks": [],
+  "hasOAuth": false
+}
